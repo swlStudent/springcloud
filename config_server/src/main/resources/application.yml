@@ -1,0 +1,16 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/swlStudent/springcloud    # git仓库地址
+          search-paths: config-resp                           # git仓库项目相对路径
+          username:                                             # git私密仓库密码账号
+          password:                                             # git私密仓库密码
+      label: master                                        #配置git项目分支
+
